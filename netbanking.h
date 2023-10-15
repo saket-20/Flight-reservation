@@ -1,14 +1,14 @@
 #include "payment.h"
 class Netbanking:public Payment
 {
-    char user_id[25];
-    char password[30];
+    string user_id;
+    string password;
     long long int account_number;
     int bank;
 public:
-    void pay()
+    void pay() override
     {
-        while(1)
+        while(true)
         {
             cout << "Banks Available: 1.HDFC(1) 2.SBI(2) 3.ICICI(3) 4.Central Bank(4) 5.Others(5)";
             cout << "\nSelect your bank:";

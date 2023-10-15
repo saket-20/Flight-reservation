@@ -7,15 +7,17 @@ class DebitCard:public Payment
     int pin;
 
 public:
-    void pay()
+    void pay() override
     {
         cout << "\nEnter card no.:";
         cin >> cardno;
         cout << "\nEnter expiry date(DDMMYY):";
-        while(1)
+        while(true)
         {
             cin >> date;
-            int doj,m,d;
+            int doj;
+            int m;
+            int d;
             doj=date;
             doj=doj/10;
             doj=doj/10;
@@ -30,14 +32,14 @@ public:
             if(m>0&&m<13&&d>0&&d<32) break;
             else cout<<"Invalid Input!!Re-enter details\n\n";
         }
-        while(1)
+        while(true)
         {
             cout << "\nEnter CVV no.:";
             cin >> cvv;
             if(cvv>=100&&cvv<=999) break;
             else cout<<"CVV must be a 3 digit no.!!! TRY AGAIN!!";
         }
-        while(1)
+        while(true)
         {
             cout<<"\nEnter pin: ";
             cin>>pin;

@@ -3,6 +3,6 @@
 class Food
 {
 protected:
-    char drinks[20];
+    string drinks;
 };
 #endif

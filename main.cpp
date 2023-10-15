@@ -55,6 +55,7 @@ int main()
                 {
                     cout<<"\nEnter food preference:\n";
                     cout<<"1.Veg Food(1)\n2.Non-Veg Food(2)\n";
+                    cin.clear();
                     cin>>food1;
                     if(food1==1||food1==2) break;
                     else cout<<"Enter Valid Input!!\n";
@@ -104,7 +105,7 @@ int main()
                 p1.i_pnr();
                 p1.gender_check();
                 p1.more_details();
-                while(1)
+                while(true)
                 {
                 cout<<"\nEnter food preference:\n";
                 cout<<"1.Veg Food(1)\n2.Non-Veg Food(2)\n";
