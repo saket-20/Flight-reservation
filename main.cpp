@@ -84,7 +84,7 @@ int main()
                     p1.pay_netbanking(&n1);
                 }
                 system("CLS");
-                srand(time(0));
+                srand(time(nullptr));
                 Seat s1((rand()%150)+1);
                 Seat * ps1=&s1;
                 p1.allot_seat(ps1);
@@ -137,7 +137,7 @@ int main()
                     p1.pay_netbanking(&n1);
                 }
                 system("CLS");
-                srand(time(0));
+                srand(time(nullptr));
                 Seat s1((rand()%150)+1);
                 Seat * ps1=&s1;
                 p1.allot_seat(ps1);
